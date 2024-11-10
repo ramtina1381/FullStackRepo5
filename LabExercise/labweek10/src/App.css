@@ -1,0 +1,128 @@
+for App.css
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex layout for Email and Full Name fields */
+.input-row {
+  display: flex;
+  gap: 15px; /* Adjusted for better spacing */
+  margin-bottom: 15px;
+}
+
+.input-container {
+  flex: 1;
+}
+
+.input-container label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-container input,
+.input-container select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.input-container.address {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.terms-container {
+  margin-top: 10px;
+  text-align: left;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+.terms-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+
+input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: column;
+    gap: 10px; /* Reduced gap for smaller screens */
+  }
+
+  .input-container {
+    width: 100%;
+  }
+}
+
+.submitted-data {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  background-color: #f0fff4;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.submitted-data h2 {
+  color: #28a745;
+  font-size: 1.5rem;
+}
+
+.submitted-data p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
